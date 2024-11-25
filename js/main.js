@@ -316,18 +316,11 @@ color: rgb(244,167,89);
 var styleContent = `
 color: rgb(30,152,255);
 `
-var title1 = '無名の主页'
-var title2 = `
- _____ __  __  _______     ____     __
-|_   _|  \\/  |/ ____\\ \\   / /\\ \\   / /
-  | | | \\  / | (___  \\ \\_/ /  \\ \\_/ / 
-  | | | |\\/| |\\___ \\  \\   /    \\   /  
- _| |_| |  | |____) |  | |      | |   
-|_____|_|  |_|_____/   |_|      |_|                                                     
-`
+var title1 = '左拾月の主页'
+
 var content = `
-版 本 号：2.2
-更新日期：2022-04-12
+版 本 号：1.0
+更新日期：2024-11-22
 
 更新说明：
 1. 新增 壁纸个性化设置
@@ -336,8 +329,8 @@ var content = `
 4. 优化 页面加载缓慢
 5. 优化 音乐延迟加载
 
-主页:  https://www.imsyy.top
-Github:  https://github.com/imsyy/home
+主页:  https://zuoshiyue.github.io/home-page-v1/
+Github:  https://github.com/zuoshiyue
 `
-console.log(`%c${title1} %c${title2}
+console.log(`%c${title1} 
 %c${content}`, styleTitle1, styleTitle2, styleContent)
