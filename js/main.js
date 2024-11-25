@@ -97,6 +97,7 @@ fetch('https://v1.hitokoto.cn?max_length=24')
 fetch('https://restapi.amap.com/v3/weather/weatherInfo?city=110000&extensions=base&key=34752fd7db29f988eca725b5af12102d')
     .then(response => response.json())
     .then(data => {
+        console.log(`%c${data}`)
         $('#wea_text').html(data.lives.weather)
         $('#city_text').html(data.lives.city)
         $('#tem_day').html(data.lives.temperature)
@@ -271,14 +272,14 @@ $("#more").hover(function () {
 })
 
 //屏蔽右键
-document.oncontextmenu = function () {
-    iziToast.show({
-        timeout: 2000,
-        iconUrl: './img/icon/warn.png',
-        message: '为了浏览体验，本站禁用右键'
-    });
-    return false;
-}
+// document.oncontextmenu = function () {
+//     iziToast.show({
+//         timeout: 2000,
+//         iconUrl: './img/icon/warn.png',
+//         message: '为了浏览体验，本站禁用右键'
+//     });
+//     return false;
+// }
 
 //自动变灰
 var myDate = new Date;
